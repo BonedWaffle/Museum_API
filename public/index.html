@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hypixel SkyBlock Museum Tracker</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hypixel SkyBlock Museum Tracker</h1>
+      <p>Enter your Minecraft UUID and Hypixel API Key to view museum progress.</p>
+
+      <form id="query-form">
+        <label>
+          UUID
+          <input type="text" id="uuid" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" required />
+        </label>
+        <label>
+          API Key
+          <input type="password" id="apiKey" placeholder="your-hypixel-api-key" required />
+        </label>
+        <button type="submit">Fetch Museum Progress</button>
+      </form>
+
+      <div id="status" class="status"></div>
+      <div id="results" class="results"></div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
